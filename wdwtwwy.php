@@ -51,6 +51,7 @@ if( !class_exists( 'WDWTWWY' ) ) {
 				add_action( 'plugins_loaded', array( self::$instance, 'load_textdomain' ) );
 				self::$instance->includes();
 				self::$instance->admin_init = new WDWTWWY_Admin_Init();
+				self::$instance->init = new WDWTWWY_Init();
 				//self::$instance->init = new WDWTWWY_Init();
 			}
 		return self::$instance;
@@ -105,6 +106,8 @@ if( !class_exists( 'WDWTWWY' ) ) {
 			$includes_path = plugin_dir_path( __FILE__ ) . 'includes/';
 			require_once WDWTWWY_PLUGIN_DIR . 'admin/class-wdwtwwy-add-menu-items.php';
 			require_once WDWTWWY_PLUGIN_DIR . 'admin/class-wdwtwwy-admin-init.php';
+			require_once WDWTWWY_PLUGIN_DIR . 'includes/class-wdwtwwy-register-post-type.php';
+			require_once WDWTWWY_PLUGIN_DIR . 'includes/class-wdwtwwy-init.php';
 			//require_once WDWTWWY_PLUGIN_DIR . 'includes/class-plugin-name-init.php';
 		}
 
