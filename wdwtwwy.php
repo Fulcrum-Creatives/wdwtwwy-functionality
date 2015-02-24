@@ -71,15 +71,15 @@ if( !class_exists( 'WDWTWWY' ) ) {
 			}
 			// Prefix
 			if ( ! defined( 'WDWTWWY_PREFIX' ) ) {
-				define( 'WDWTWWY_PREFIX', 'plugin-name_' );
+				define( 'WDWTWWY_PREFIX', 'wdwtwwy_' );
 			}
 			// Textdomain
 			if ( ! defined( 'WDWTWWY_TEXTDOMAIN' ) ) {
-				define( 'WDWTWWY_TEXTDOMAIN', 'plugin-name' );
+				define( 'WDWTWWY_TEXTDOMAIN', 'wdwtwwy' );
 			}
 			// Plugin Options
 			if ( ! defined( 'WDWTWWY_OPTIONS' ) ) {
-				define( 'WDWTWWY_OPTIONS', 'plugin-name-options' );
+				define( 'WDWTWWY_OPTIONS', 'wdwtwwy-options' );
 			}
 			// Plugin Directory
 			if ( ! defined( 'WDWTWWY_PLUGIN_DIR' ) ) {
@@ -108,7 +108,7 @@ if( !class_exists( 'WDWTWWY' ) ) {
 			require_once WDWTWWY_PLUGIN_DIR . 'admin/class-wdwtwwy-admin-init.php';
 			require_once WDWTWWY_PLUGIN_DIR . 'includes/class-wdwtwwy-register-post-type.php';
 			require_once WDWTWWY_PLUGIN_DIR . 'includes/class-wdwtwwy-init.php';
-			//require_once WDWTWWY_PLUGIN_DIR . 'includes/class-plugin-name-init.php';
+			//require_once WDWTWWY_PLUGIN_DIR . 'includes/class-wdwtwwy-init.php';
 		}
 
 		/**
