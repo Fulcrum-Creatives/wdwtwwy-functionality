@@ -25,6 +25,8 @@ class WDWTWWY_Admin_Init {
 	}
 
 	public function add_styles() {
-		wp_enqueue_style( WDWTWWY_TEXTDOMAIN, plugin_dir_url( __FILE__ ) . 'css/admin.css', array(), $this->version, 'all' );
+		if( is_admin() ) {
+			wp_enqueue_style( WDWTWWY_TEXTDOMAIN, plugin_dir_url( __FILE__ ) . 'css/admin.css', array(), $this->version, 'all' );
+		}
 	}
 }
